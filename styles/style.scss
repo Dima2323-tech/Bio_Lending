@@ -1,0 +1,759 @@
+$main-color: rgba(33, 37, 41, 1);
+$secondary-color:rgba(255, 183, 66, 1);
+body{
+  background: $main-color;
+}
+
+/*Button_Content*/
+.Button_Content {
+  padding: 10px 35px;
+  background: $secondary-color;
+  border: 2px solid $secondary-color;
+  border-radius: 50px;
+  transition: 0.5s;
+
+  /*Hover_For_Button*/
+  &:hover {
+    background-color: white;
+    border: 2px solid white;
+    transition: 0.5s;
+  }
+
+  /*Button_Text*/
+  .Button_Text {
+    color: rgba(33, 37, 41, 1);
+    text-decoration: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+  }
+}
+
+/*Header-Styles*/
+header {
+
+  padding: 17px 50px;
+
+  /*Styles for Header_Content*/
+  .Header_Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /*Styles for Nav*/
+    nav {
+      margin-left: 35px;
+
+      /*Styles for ul in Nav*/
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+
+        /*Header_Nav_Buttons*/
+        .Header_Nav_Button {
+          list-style: none;
+
+          /*Style for all Nav Buttons Besides first Button*/
+          &.Header_Nav_Button:not(:first-child) {
+            margin: 0 0 0 25px;
+          }
+        }
+
+        /*Styles_For a in Header_Nav_Button*/
+        .Header_Nav_Button > a {
+          color: white;
+          text-decoration: none;
+          transition: 0.5s;
+          font-family: "Inter";
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px;
+        }
+
+        /*Hover For a in Header_Nav_Button*/
+        a:hover {
+          color: $secondary-color;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+/*End Header-Styles*/
+
+/*Banner-Styles*/
+
+/*Banner-Conteiner*/
+.Banner-Conteiner{
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+
+  /*Banner-Content*/
+  .Banner-Content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Inter";
+    color: white;
+
+    /*Banner-Top-Tittle*/
+    .Banner-Tittle-Top{
+      font-weight: 700;
+      font-size: 32px;
+      span>a{
+        color:$secondary-color ;
+        &:hover {
+          color: rgba(255, 123, 66, 0.76);
+          transition: 0.5s;
+        }
+      }
+    }
+
+    /*Banner-Bottom-Tittle*/
+    .Banner-Tittle-Bottom{
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+
+    /*Banner-Text*/
+    .Banner-Text{
+      margin-bottom: 50px;
+      span{
+        font-weight: 400;
+        font-size: 24px;
+      }
+    }
+
+    /*Banner-Avatar*/
+    .Banner-Avatar-Container{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+/*End-Banner-Styles*/
+
+/*Blocks*/
+
+/*Blocks-Conteiner*/
+.Blocks-Conteiner{
+  padding: 0 72px;
+  margin: 140px 0 227px;
+
+  /*Blocks-Content*/
+  .Blocks-Content{
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+    /*Blocks*/
+    .Block{
+      display: flex;
+      justify-content: space-between;
+      width: 420px;
+      height: 120px;
+      background-color: rgba(41, 43, 46, 1);
+      border-radius: 10px;
+      align-items: center;
+      padding: 0 30px;
+      font-family: "Inter";
+      transition: 2.5s;
+
+      /*Hover for Blocks*/
+      &:hover {
+        background: linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
+
+        /*Hover for Blocks-Tittle*/
+        .Block-Tittle{
+
+          /*Hover for Blocks-Numbers*/
+          &-Number{
+            font-size: 32px;
+            color: black;
+          }
+
+          /*Hover for Blocks-Text*/
+          &-Text{
+            font-size: 16px;
+            color: black;
+          }
+        }
+      }
+      /*Blocks-Tittle*/
+      .Block-Tittle{
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        color: black;
+
+        /*Blocks-Number*/
+        &-Number{
+          font-size: 32px;
+          color: $secondary-color;
+        }
+
+        /*Blocks-Text*/
+        &-Text{
+          font-size: 16px;
+          color: white;
+        }
+      }
+      /*Blocks-Arrow*/
+      .Block-Arrow{
+        color: #B3B3B3;
+      }
+    }
+  }
+}
+
+/*End Blocks*/
+
+/*About Me*/
+.About-Container{
+  display: flex;
+  justify-content: center;
+
+  /*About-Content*/
+  .About-Content{
+    display: flex;
+    max-width: 1390px;
+
+    /*About-Photo*/
+    .About-Photo{
+      margin-top:30px ;
+    }
+
+    /*About-Text*/
+    .About-Text{
+      display: flex;
+      flex-direction: column;
+      max-width: 666px;
+      margin-left: 80px;
+
+      /*About-Text-Label*/
+      &-Label{
+        max-width: 150px;
+        color:$secondary-color;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 6px 26px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50px;
+      }
+
+      /*About-Text-Tittle*/
+      &-Tittle{
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 48px;
+        color: white;
+      }
+
+      /*About-Text-Description*/
+      &-Description{
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 16px;
+        color: white;
+        line-height: 32px;
+        margin-bottom: 45px;
+      }
+    }
+  }
+}
+/*End About Me*/
+
+
+/*My Skills*/
+.Skills-Container {
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 30px auto;
+
+  /*Skills-Content*/
+  .Skills-Content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+
+    /*Skills-Text*/
+    .Skills-Text {
+      display: flex;
+      flex-direction: column;
+      max-width: 666px;
+      margin-left: 80px;
+
+      /*Skills-Text-Label*/
+      &-Label {
+        max-width: 150px;
+        color: $secondary-color;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 6px 26px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50px;
+      }
+
+      /*Skills-Text-Tittle*/
+      &-Tittle {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 48px;
+        color: white;
+        max-width: 500px;
+        margin-bottom: 30px;
+      }
+
+      /*Skills-Text-Description*/
+      &-Description {
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 16px;
+        color: white;
+        line-height: 32px;
+        margin-bottom: 45px;
+      }
+    }
+    /*Skills-Blocks*/
+    .Skills-Blocks {
+      display: flex;
+      max-width: 560px;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 51px;
+
+      /*Skills-Blocks-Top*/
+      &-Top {
+        display: flex;
+
+        /*Skills-Blocks-Top-Content*/
+        &-Content {
+          margin: 16px;
+          width: 80px;
+          height: 80px;
+          background-color: rgba(56, 62, 69, 1);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.5s;
+
+          /*Hover for Skills-Blocks-Top-Content*/
+          &:hover {
+            background: rgba(255, 183, 66, 0.5);
+            transition: 0.5s;
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+
+      /*Skills-Blocks-Bottom*/
+      &-Bottom {
+        display: flex;
+
+        /*Skills-Blocks-Bottom-Content*/
+        &-Content {
+          margin: 16px;
+          width: 80px;
+          height: 80px;
+          background-color: rgba(56, 62, 69, 1);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.5s;
+          /*Hover for Skills-Blocks-Bottom-Content*/
+          &:hover {
+            background: rgba(255, 183, 66, 0.5);
+            transition: 0.5s;
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          }
+        }
+      }
+    }
+  }
+}
+/*End My Skills*/
+
+/*Works*/
+.Works-Container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 130px auto;
+  /*Works-Content*/
+  .Works-Content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /*Works-Text*/
+    .Works-Text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      /*Works-Text-Label*/
+      &-Label {
+        color: $secondary-color;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 6px 26px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50px;
+      }
+
+      /*Works-Text-Tittle*/
+      &-Tittle {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 48px;
+        color: white;
+        max-width: 500px;
+        margin-bottom: 30px;
+
+      }
+    }
+    /*Works-Nav-Menu*/
+    .Works-Nav-Menu {
+      font-family: 'Poppins';
+      margin-bottom: 50px;
+
+      /*Works-Nav-Menu_ul*/
+      ul {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        color: white;
+        list-style: none;
+
+        /*Works-Nav-Menu_ul_li*/
+        li {
+          margin-left: 30px;
+          padding: 5px 20px;
+          transition: 0.5s;
+          /*Hover for Works-Nav-Menu_ul_li*/
+          &:hover {
+            background-color: $secondary-color;
+            border-radius: 5px;
+            color: black;
+            transition: 0.5s;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    /*Works-Photos*/
+    .Works-Photos {
+      display: flex;
+
+      /*Works-Photos-Left-Column*/
+      .Works-Photos-Left-Column {
+        margin-right: 24px;
+
+        /*Works-Photos-Left-Column-Top*/
+        &-Top {
+          margin-bottom: 32px;
+        }
+      }
+
+      /*Works-Photos-Center-Column*/
+      .Works-Photos-Center-Column {
+        margin-right: 24px;
+
+        /*Works-Photos-Center-Column-Top*/
+        &-Top {
+          margin-bottom: 32px;
+        }
+      }
+
+      /*Works-Photos-Right-Column*/
+      .Works-Photos-Right-Column {
+
+        /*Works-Photos-Right-Column-Top*/
+        &-Top {
+          margin-bottom: 32px;
+        }
+      }
+    }
+  }
+}
+/*End Works*/
+
+.Testimonials-Container {
+  max-width: 1220px;
+  margin: 0 auto;
+
+  .Testimonials-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .Testimonials-Text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-Label {
+        max-width: 200px;
+        color: $secondary-color;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 6px 26px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50px;
+      }
+
+      &-Tittle {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+        margin-bottom: 30px;
+      }
+    }
+
+    .Comments-Content {
+      display: flex;
+
+      .Comment {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 450px;
+        padding: 50px;
+        background-color: white;
+        border-radius: 10px;
+        font-family: 'Poppins';
+
+        &:not(:last-child) {
+          margin-right: 40px;
+        }
+
+        &-Stars {
+          position: relative;
+          font-size: 20px;
+          display: flex;
+
+          &-rating {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+          }
+
+          &-label_rating {
+            height: 100%;
+            cursor: pointer;
+
+            &:not(:last-child) {
+              margin-right: 10px;
+            }
+
+            &:before {
+              content: "★";
+              display: flex;
+              transition: color 0.3s ease 0s;
+            }
+
+            &:hover {
+              color: orange;
+            }
+          }
+        }
+        &-Text {
+          padding: 20px 0;
+          font-weight: 400;
+          line-height: 34px;
+          max-width: 300px;
+        }
+
+        &-Client {
+          display: flex;
+          margin-top: 30px;
+
+          &-Logo {
+            margin-right: 24px;
+          }
+
+          &-Text {
+            display: flex;
+            flex-direction: column;
+
+            &-Tittle {
+              font-weight: 700;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.Project-Container{
+  max-width: 1250px;
+  height: 175px;
+  margin: 164px  auto 0;
+  background-color:#FFB742;
+  border-radius:15px ;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  position: relative;
+  top:87.5px;
+  .Project-Content{
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-Tittle{
+      font-family: 'Inter';
+      font-size: 35px;
+      font-weight: 900;
+    }
+    &-Text{
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+
+    }
+    &-Button{
+      background:none;
+      border: none;
+      &-Text{
+        padding: 12px 40px;
+        text-decoration: none;
+        border: 2px solid #000000;
+        border-radius: 50px;
+        color: black;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        transition: 0.5s;
+        &:hover{
+          color: white;
+          background-color: black;
+          transition: 0.5s;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background: #1C1C1C;
+  display: flex;
+  align-items: center;
+  .Footer-Content{
+    width: 1450px;
+    margin: 150px auto 93px;
+    display: flex;
+    justify-content: space-between;
+    &-Text{
+      display: flex;
+      flex-direction: column;
+      &-Tittle{
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 32px;
+        color: $secondary-color;
+        margin-bottom: 30px;
+      }
+      &-Label{
+        max-width: 250px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 16px;
+        color: rgba(212, 212, 212, 1);
+      }
+    }
+    .Footer-Nav-Content{
+      font-family: 'Work Sans';
+      &-Tittle{
+        font-weight: 700;
+        font-size: 22px;
+        color: rgba(245, 251, 242, 1);
+      }
+      &-Navigation{
+        ul{
+          padding: 0;
+          .Footer-Nav-Content-Navigation-Button{
+            text-decoration: none;
+            &:after {
+              display: block;
+              position: relative;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color:$secondary-color;
+              content: "";
+              transition: width 0.3s ease-out;
+            }
+            &:hover:after,
+            &:focus:after {
+              width: 25%;
+            }
+
+
+            li{
+              list-style: none;
+              font-weight: 500;
+              font-size: 18px;
+              color:rgba(123, 123, 123, 1) ;
+              padding-top:10px;
+              transition: 0.5s;
+              &:hover{
+                color: white;
+                transition: 0.5s;
+
+              }
+            }
+          }
+        }
+      }
+    }
+    .Footer-Email{
+      display: flex;
+      flex-direction: column;
+      font-family: 'Work Sans';
+      &-Tittle{
+
+        font-weight: 700;
+        font-size: 22px;
+        color: rgba(245, 251, 242, 1);
+        margin-bottom: 10px;
+        &-Input{
+          background:none;
+          color: rgba(123, 123, 123, 1);
+          border:none;
+          font-weight:500 ;
+          width: 300px;
+        }
+      }
+    }
+  }
+}

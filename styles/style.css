@@ -1,0 +1,570 @@
+@charset "UTF-8";
+body {
+  background: #212529; }
+
+/*Button_Content*/
+.Button_Content {
+  padding: 10px 35px;
+  background: #ffb742;
+  border: 2px solid #ffb742;
+  border-radius: 50px;
+  transition: 0.5s;
+  /*Hover_For_Button*/
+  /*Button_Text*/ }
+  .Button_Content:hover {
+    background-color: white;
+    border: 2px solid white;
+    transition: 0.5s; }
+  .Button_Content .Button_Text {
+    color: #212529;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px; }
+
+/*Header-Styles*/
+header {
+  padding: 17px 50px;
+  /*Styles for Header_Content*/ }
+  header .Header_Content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*Styles for Nav*/ }
+    header .Header_Content nav {
+      margin-left: 35px;
+      /*Styles for ul in Nav*/ }
+      header .Header_Content nav ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        /*Header_Nav_Buttons*/
+        /*Styles_For a in Header_Nav_Button*/
+        /*Hover For a in Header_Nav_Button*/ }
+        header .Header_Content nav ul .Header_Nav_Button {
+          list-style: none;
+          /*Style for all Nav Buttons Besides first Button*/ }
+          header .Header_Content nav ul .Header_Nav_Button.Header_Nav_Button:not(:first-child) {
+            margin: 0 0 0 25px; }
+        header .Header_Content nav ul .Header_Nav_Button > a {
+          color: white;
+          text-decoration: none;
+          transition: 0.5s;
+          font-family: "Inter";
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 27px; }
+        header .Header_Content nav ul a:hover {
+          color: #ffb742;
+          transition: 0.5s; }
+
+/*End Header-Styles*/
+/*Banner-Styles*/
+/*Banner-Conteiner*/
+.Banner-Conteiner {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+  /*Banner-Content*/ }
+  .Banner-Conteiner .Banner-Content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Inter";
+    color: white;
+    /*Banner-Top-Tittle*/
+    /*Banner-Bottom-Tittle*/
+    /*Banner-Text*/
+    /*Banner-Avatar*/ }
+    .Banner-Conteiner .Banner-Content .Banner-Tittle-Top {
+      font-weight: 700;
+      font-size: 32px; }
+      .Banner-Conteiner .Banner-Content .Banner-Tittle-Top span > a {
+        color: #ffb742; }
+        .Banner-Conteiner .Banner-Content .Banner-Tittle-Top span > a:hover {
+          color: rgba(255, 123, 66, 0.76);
+          transition: 0.5s; }
+    .Banner-Conteiner .Banner-Content .Banner-Tittle-Bottom {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 25px; }
+    .Banner-Conteiner .Banner-Content .Banner-Text {
+      margin-bottom: 50px; }
+      .Banner-Conteiner .Banner-Content .Banner-Text span {
+        font-weight: 400;
+        font-size: 24px; }
+    .Banner-Conteiner .Banner-Content .Banner-Avatar-Container {
+      display: flex;
+      justify-content: center; }
+
+/*End-Banner-Styles*/
+/*Blocks*/
+/*Blocks-Conteiner*/
+.Blocks-Conteiner {
+  padding: 0 72px;
+  margin: 140px 0 227px;
+  /*Blocks-Content*/ }
+  .Blocks-Conteiner .Blocks-Content {
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    /*Blocks*/ }
+    .Blocks-Conteiner .Blocks-Content .Block {
+      display: flex;
+      justify-content: space-between;
+      width: 420px;
+      height: 120px;
+      background-color: #292b2e;
+      border-radius: 10px;
+      align-items: center;
+      padding: 0 30px;
+      font-family: "Inter";
+      transition: 2.5s;
+      /*Hover for Blocks*/
+      /*Blocks-Tittle*/
+      /*Blocks-Arrow*/ }
+      .Blocks-Conteiner .Blocks-Content .Block:hover {
+        background: linear-gradient(94.3deg, #FFB742 0%, rgba(255, 123, 66, 0.76) 99.33%);
+        /*Hover for Blocks-Tittle*/ }
+        .Blocks-Conteiner .Blocks-Content .Block:hover .Block-Tittle {
+          /*Hover for Blocks-Numbers*/
+          /*Hover for Blocks-Text*/ }
+          .Blocks-Conteiner .Blocks-Content .Block:hover .Block-Tittle-Number {
+            font-size: 32px;
+            color: black; }
+          .Blocks-Conteiner .Blocks-Content .Block:hover .Block-Tittle-Text {
+            font-size: 16px;
+            color: black; }
+      .Blocks-Conteiner .Blocks-Content .Block .Block-Tittle {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        color: black;
+        /*Blocks-Number*/
+        /*Blocks-Text*/ }
+        .Blocks-Conteiner .Blocks-Content .Block .Block-Tittle-Number {
+          font-size: 32px;
+          color: #ffb742; }
+        .Blocks-Conteiner .Blocks-Content .Block .Block-Tittle-Text {
+          font-size: 16px;
+          color: white; }
+      .Blocks-Conteiner .Blocks-Content .Block .Block-Arrow {
+        color: #B3B3B3; }
+
+/*End Blocks*/
+/*About Me*/
+.About-Container {
+  display: flex;
+  justify-content: center;
+  /*About-Content*/ }
+  .About-Container .About-Content {
+    display: flex;
+    max-width: 1390px;
+    /*About-Photo*/
+    /*About-Text*/ }
+    .About-Container .About-Content .About-Photo {
+      margin-top: 30px; }
+    .About-Container .About-Content .About-Text {
+      display: flex;
+      flex-direction: column;
+      max-width: 666px;
+      margin-left: 80px;
+      /*About-Text-Label*/
+      /*About-Text-Tittle*/
+      /*About-Text-Description*/ }
+      .About-Container .About-Content .About-Text-Label {
+        max-width: 150px;
+        color: #ffb742;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 6px 26px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50px; }
+      .About-Container .About-Content .About-Text-Tittle {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 48px;
+        color: white; }
+      .About-Container .About-Content .About-Text-Description {
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 16px;
+        color: white;
+        line-height: 32px;
+        margin-bottom: 45px; }
+
+/*End About Me*/
+/*My Skills*/
+.Skills-Container {
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
+  margin: 30px auto;
+  /*Skills-Content*/ }
+  .Skills-Container .Skills-Content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    /*Skills-Text*/
+    /*Skills-Blocks*/ }
+    .Skills-Container .Skills-Content .Skills-Text {
+      display: flex;
+      flex-direction: column;
+      max-width: 666px;
+      margin-left: 80px;
+      /*Skills-Text-Label*/
+      /*Skills-Text-Tittle*/
+      /*Skills-Text-Description*/ }
+      .Skills-Container .Skills-Content .Skills-Text-Label {
+        max-width: 150px;
+        color: #ffb742;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 6px 26px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50px; }
+      .Skills-Container .Skills-Content .Skills-Text-Tittle {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 48px;
+        color: white;
+        max-width: 500px;
+        margin-bottom: 30px; }
+      .Skills-Container .Skills-Content .Skills-Text-Description {
+        font-family: "Poppins";
+        font-weight: 200;
+        font-size: 16px;
+        color: white;
+        line-height: 32px;
+        margin-bottom: 45px; }
+    .Skills-Container .Skills-Content .Skills-Blocks {
+      display: flex;
+      max-width: 560px;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 51px;
+      /*Skills-Blocks-Top*/
+      /*Skills-Blocks-Bottom*/ }
+      .Skills-Container .Skills-Content .Skills-Blocks-Top {
+        display: flex;
+        /*Skills-Blocks-Top-Content*/ }
+        .Skills-Container .Skills-Content .Skills-Blocks-Top-Content {
+          margin: 16px;
+          width: 80px;
+          height: 80px;
+          background-color: #383e45;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.5s;
+          /*Hover for Skills-Blocks-Top-Content*/ }
+          .Skills-Container .Skills-Content .Skills-Blocks-Top-Content:hover {
+            background: rgba(255, 183, 66, 0.5);
+            transition: 0.5s;
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+      .Skills-Container .Skills-Content .Skills-Blocks-Bottom {
+        display: flex;
+        /*Skills-Blocks-Bottom-Content*/ }
+        .Skills-Container .Skills-Content .Skills-Blocks-Bottom-Content {
+          margin: 16px;
+          width: 80px;
+          height: 80px;
+          background-color: #383e45;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: 0.5s;
+          /*Hover for Skills-Blocks-Bottom-Content*/ }
+          .Skills-Container .Skills-Content .Skills-Blocks-Bottom-Content:hover {
+            background: rgba(255, 183, 66, 0.5);
+            transition: 0.5s;
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+
+/*End My Skills*/
+/*Works*/
+.Works-Container {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 130px auto;
+  /*Works-Content*/ }
+  .Works-Container .Works-Content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    /*Works-Text*/
+    /*Works-Nav-Menu*/
+    /*Works-Photos*/ }
+    .Works-Container .Works-Content .Works-Text {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      /*Works-Text-Label*/
+      /*Works-Text-Tittle*/ }
+      .Works-Container .Works-Content .Works-Text-Label {
+        color: #ffb742;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 6px 26px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50px; }
+      .Works-Container .Works-Content .Works-Text-Tittle {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 48px;
+        color: white;
+        max-width: 500px;
+        margin-bottom: 30px; }
+    .Works-Container .Works-Content .Works-Nav-Menu {
+      font-family: 'Poppins';
+      margin-bottom: 50px;
+      /*Works-Nav-Menu_ul*/ }
+      .Works-Container .Works-Content .Works-Nav-Menu ul {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        color: white;
+        list-style: none;
+        /*Works-Nav-Menu_ul_li*/ }
+        .Works-Container .Works-Content .Works-Nav-Menu ul li {
+          margin-left: 30px;
+          padding: 5px 20px;
+          transition: 0.5s;
+          /*Hover for Works-Nav-Menu_ul_li*/ }
+          .Works-Container .Works-Content .Works-Nav-Menu ul li:hover {
+            background-color: #ffb742;
+            border-radius: 5px;
+            color: black;
+            transition: 0.5s;
+            cursor: pointer; }
+    .Works-Container .Works-Content .Works-Photos {
+      display: flex;
+      /*Works-Photos-Left-Column*/
+      /*Works-Photos-Center-Column*/
+      /*Works-Photos-Right-Column*/ }
+      .Works-Container .Works-Content .Works-Photos .Works-Photos-Left-Column {
+        margin-right: 24px;
+        /*Works-Photos-Left-Column-Top*/ }
+        .Works-Container .Works-Content .Works-Photos .Works-Photos-Left-Column-Top {
+          margin-bottom: 32px; }
+      .Works-Container .Works-Content .Works-Photos .Works-Photos-Center-Column {
+        margin-right: 24px;
+        /*Works-Photos-Center-Column-Top*/ }
+        .Works-Container .Works-Content .Works-Photos .Works-Photos-Center-Column-Top {
+          margin-bottom: 32px; }
+      .Works-Container .Works-Content .Works-Photos .Works-Photos-Right-Column {
+        /*Works-Photos-Right-Column-Top*/ }
+        .Works-Container .Works-Content .Works-Photos .Works-Photos-Right-Column-Top {
+          margin-bottom: 32px; }
+
+/*End Works*/
+.Testimonials-Container {
+  max-width: 1220px;
+  margin: 0 auto; }
+  .Testimonials-Container .Testimonials-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .Testimonials-Container .Testimonials-Content .Testimonials-Text {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .Testimonials-Container .Testimonials-Content .Testimonials-Text-Label {
+        max-width: 200px;
+        color: #ffb742;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Poppins";
+        padding: 6px 26px;
+        background-color: rgba(255, 255, 255, 0.08);
+        border-radius: 50px; }
+      .Testimonials-Container .Testimonials-Content .Testimonials-Text-Tittle {
+        font-family: "Roboto";
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+        margin-bottom: 30px; }
+    .Testimonials-Container .Testimonials-Content .Comments-Content {
+      display: flex; }
+      .Testimonials-Container .Testimonials-Content .Comments-Content .Comment {
+        display: flex;
+        flex-direction: column;
+        width: 380px;
+        height: 450px;
+        padding: 50px;
+        background-color: white;
+        border-radius: 10px;
+        font-family: 'Poppins'; }
+        .Testimonials-Container .Testimonials-Content .Comments-Content .Comment:not(:last-child) {
+          margin-right: 40px; }
+        .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Stars {
+          position: relative;
+          font-size: 20px;
+          display: flex; }
+          .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Stars-rating {
+            position: absolute;
+            width: 0%;
+            height: 0%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden; }
+          .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Stars-label_rating {
+            height: 100%;
+            cursor: pointer; }
+            .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Stars-label_rating:not(:last-child) {
+              margin-right: 10px; }
+            .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Stars-label_rating:before {
+              content: "★";
+              display: flex;
+              transition: color 0.3s ease 0s; }
+            .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Stars-label_rating:hover {
+              color: orange; }
+        .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Text {
+          padding: 20px 0;
+          font-weight: 400;
+          line-height: 34px;
+          max-width: 300px; }
+        .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Client {
+          display: flex;
+          margin-top: 30px; }
+          .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Client-Logo {
+            margin-right: 24px; }
+          .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Client-Text {
+            display: flex;
+            flex-direction: column; }
+            .Testimonials-Container .Testimonials-Content .Comments-Content .Comment-Client-Text-Tittle {
+              font-weight: 700;
+              font-size: 20px; }
+
+.Project-Container {
+  max-width: 1250px;
+  height: 175px;
+  margin: 164px  auto 0;
+  background-color: #FFB742;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  top: 87.5px; }
+  .Project-Container .Project-Content {
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .Project-Container .Project-Content-Tittle {
+      font-family: 'Inter';
+      font-size: 35px;
+      font-weight: 900; }
+    .Project-Container .Project-Content-Text {
+      font-family: 'Roboto';
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px; }
+    .Project-Container .Project-Content-Button {
+      background: none;
+      border: none; }
+      .Project-Container .Project-Content-Button-Text {
+        padding: 12px 40px;
+        text-decoration: none;
+        border: 2px solid #000000;
+        border-radius: 50px;
+        color: black;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        transition: 0.5s; }
+        .Project-Container .Project-Content-Button-Text:hover {
+          color: white;
+          background-color: black;
+          transition: 0.5s; }
+
+footer {
+  background: #1C1C1C;
+  display: flex;
+  align-items: center; }
+  footer .Footer-Content {
+    width: 1450px;
+    margin: 150px auto 93px;
+    display: flex;
+    justify-content: space-between; }
+    footer .Footer-Content-Text {
+      display: flex;
+      flex-direction: column; }
+      footer .Footer-Content-Text-Tittle {
+        font-family: 'Poppins';
+        font-weight: 700;
+        font-size: 32px;
+        color: #ffb742;
+        margin-bottom: 30px; }
+      footer .Footer-Content-Text-Label {
+        max-width: 250px;
+        font-family: 'Work Sans';
+        font-weight: 600;
+        font-size: 16px;
+        color: #d4d4d4; }
+    footer .Footer-Content .Footer-Nav-Content {
+      font-family: 'Work Sans'; }
+      footer .Footer-Content .Footer-Nav-Content-Tittle {
+        font-weight: 700;
+        font-size: 22px;
+        color: #f5fbf2; }
+      footer .Footer-Content .Footer-Nav-Content-Navigation ul {
+        padding: 0; }
+        footer .Footer-Content .Footer-Nav-Content-Navigation ul .Footer-Nav-Content-Navigation-Button {
+          text-decoration: none; }
+          footer .Footer-Content .Footer-Nav-Content-Navigation ul .Footer-Nav-Content-Navigation-Button:after {
+            display: block;
+            position: relative;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffb742;
+            content: "";
+            transition: width 0.3s ease-out; }
+          footer .Footer-Content .Footer-Nav-Content-Navigation ul .Footer-Nav-Content-Navigation-Button:hover:after, footer .Footer-Content .Footer-Nav-Content-Navigation ul .Footer-Nav-Content-Navigation-Button:focus:after {
+            width: 25%; }
+          footer .Footer-Content .Footer-Nav-Content-Navigation ul .Footer-Nav-Content-Navigation-Button li {
+            list-style: none;
+            font-weight: 500;
+            font-size: 18px;
+            color: #7b7b7b;
+            padding-top: 10px;
+            transition: 0.5s; }
+            footer .Footer-Content .Footer-Nav-Content-Navigation ul .Footer-Nav-Content-Navigation-Button li:hover {
+              color: white;
+              transition: 0.5s; }
+    footer .Footer-Content .Footer-Email {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Work Sans'; }
+      footer .Footer-Content .Footer-Email-Tittle {
+        font-weight: 700;
+        font-size: 22px;
+        color: #f5fbf2;
+        margin-bottom: 10px; }
+        footer .Footer-Content .Footer-Email-Tittle-Input {
+          background: none;
+          color: #7b7b7b;
+          border: none;
+          font-weight: 500;
+          width: 300px; }
+
+/*# sourceMappingURL=style.css.map */
